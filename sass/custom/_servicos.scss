@@ -1,0 +1,40 @@
+#fazemos {
+	background: url('../images/bg2.jpg');
+	background-size: cover;
+	&  h2 {
+		color: $branco;
+	}
+}
+
+.servicos {
+	@include column(1/3);
+	width: 30.1%;
+	margin-top: 50px;
+	transition: linear .2s;
+	&:hover {
+		background: #fff;
+	    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		transform: translate(-10px, -10px);
+		& img {
+			
+		}
+	}
+}
+
+.servicos-header{
+	padding: 60px 30px;
+	 & img.services-icon {
+		width: 25%;
+		height: 25%;
+		display: block;
+		margin: 0 auto 30px;
+		transition: .5s;
+	}
+	& p {
+		text-align: center;
+		font-size: 16px;
+		font-family: Din-R;
+		line-height: 24px;
+		color: #a7a7a7;
+	}
+}

@@ -1,0 +1,32 @@
+@font-face {
+	font-family: Din-Bl;
+	src: url('#{$font-path}DINRound-Black.ttf') format('truetype');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: Din-B;
+	src: url('#{$font-path}DINRound-Bold.eot');
+	src: url('#{$font-path}DINRound-Bold?#iefix') format('embedded-opentype'),
+		 url('#{$font-path}DINRound-Bold.svg') format('svg'),
+		 url('#{$font-path}DINRound-Bold.ttf') format('truetype');
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: Din-M;
+	src: url('#{$font-path}DINRound-Medium.ttf') format('truetype');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: Din-R;
+	src: url('#{$font-path}DINRound-Regular.ttf') format('truetype');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Din-L;
+	src: url('#{$font-path}DINRound-Light.ttf') format('truetype');
+	font-weight: 500;
+}

@@ -1,0 +1,70 @@
+#sobre {
+	position: relative;
+	float: none;
+}
+
+// .half {
+// 	@include column(1/2);
+// 	margin-top: 50px;
+// }
+
+// .slider {
+// 	overflow: hidden;
+// 	position: relative;
+// }
+
+// .slider .item-1 {
+// 	position: relative;
+// 	transition: 1s;
+// }
+
+// .slider .item-2 {
+// 	position: absolute;
+// 	left: 105%;
+// 	transition: 1s;
+// 	width: 100%;
+// }
+
+// .arrow-left {
+// 	position: absolute;
+// 	top: 50%;
+// 	transform: translateY(-50%);
+// 	left: 10px;
+// }
+
+// .arrow-right {
+// 	position: absolute;
+// 	top: 50%;
+// 	transform: translateY(-50%);
+// 	right: 10px;
+// }
+
+.quem-somos {
+	@include center(60%);
+	margin-top: 50px;
+}
+
+.time-card {
+	@include column(1/2);
+	transition: .5s;
+	padding: 20px 0;
+	&:hover {
+		background: #fff;
+	    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		transform: translate(-10px, -10px);
+	}
+	& img {
+	    width: 25%;
+	    height: 25%;
+	    display: block;
+	    margin: 0 auto 30px;
+	    transition: .5s;
+	}
+	& p {
+		text-align: center;
+		font-size: 16px;
+		font-family: Din-R;
+		line-height: 24px;
+		padding: 30px;
+	}
+}

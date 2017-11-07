@@ -1,0 +1,460 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: Din-Bl;
+  src: url("../fonts/DINRound-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Din-B;
+  src: url("../fonts/DINRound-Bold.eot");
+  src: url("../fonts/DINRound-Bold?#iefix") format("embedded-opentype"), url("../fonts/DINRound-Bold.svg") format("svg"), url("../fonts/DINRound-Bold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: Din-M;
+  src: url("../fonts/DINRound-Medium.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Din-R;
+  src: url("../fonts/DINRound-Regular.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Din-L;
+  src: url("../fonts/DINRound-Light.ttf") format("truetype");
+  font-weight: 500;
+}
+/* line 1, ../sass/custom/_main.scss */
+body {
+  background: #fdfdfd;
+  font-family: Din-L;
+  float: left;
+}
+
+/* line 7, ../sass/custom/_main.scss */
+a {
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+/* line 12, ../sass/custom/_main.scss */
+header {
+  background: url("../images/background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+/* line 18, ../sass/custom/_main.scss */
+section {
+  padding: 100px;
+  float: left;
+}
+
+/* line 23, ../sass/custom/_main.scss */
+section h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #0A1829;
+}
+/* line 27, ../sass/custom/_main.scss */
+section h2:after {
+  content: "";
+  background: #588E95;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 2px;
+  position: relative;
+  top: 2px;
+}
+
+/* line 39, ../sass/custom/_main.scss */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 1, ../sass/custom/_navbar.scss */
+nav {
+  transition: .5s;
+  padding: 10px 0 25px 0;
+}
+
+/* line 6, ../sass/custom/_navbar.scss */
+nav .logo-img {
+  position: relative;
+}
+/* line 8, ../sass/custom/_navbar.scss */
+nav .logo-img img {
+  transition: .5s;
+}
+
+/* line 13, ../sass/custom/_navbar.scss */
+nav .itens-menu {
+  width: 60%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+/* line 18, ../sass/custom/_navbar.scss */
+nav .itens-menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 22, ../sass/custom/_navbar.scss */
+nav .itens-menu li a {
+  font-family: Din-R;
+  color: #fdfdfd;
+  transition: .5s;
+}
+/* line 26, ../sass/custom/_navbar.scss */
+nav .itens-menu li a:after {
+  content: "";
+  background: #00acc1;
+  display: block;
+  width: 0;
+  height: 2px;
+  position: relative;
+  top: 2px;
+  transition: all 0.3s ease 0s;
+}
+/* line 36, ../sass/custom/_navbar.scss */
+nav .itens-menu li a:hover:after {
+  width: 100%;
+}
+
+/* line 42, ../sass/custom/_navbar.scss */
+nav.fixed-navbar {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+  border-bottom: 2px solid #7FADA9;
+}
+/* line 48, ../sass/custom/_navbar.scss */
+nav.fixed-navbar .logo-img img {
+  transform: scale(1.7);
+}
+/* line 51, ../sass/custom/_navbar.scss */
+nav.fixed-navbar .itens-menu ul li a {
+  color: #7FADA9;
+}
+
+/* line 56, ../sass/custom/_navbar.scss */
+header .hero-text {
+  text-align: center;
+  color: #588E95 !important;
+  font-size: 48px;
+  text-transform: uppercase;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+/* line 65, ../sass/custom/_navbar.scss */
+header .hero-text:first-line {
+  font-family: Din-R;
+}
+/* line 68, ../sass/custom/_navbar.scss */
+header .hero-text .wrap {
+  color: #588E95;
+}
+/* line 71, ../sass/custom/_navbar.scss */
+header .hero-text a {
+  line-height: 5;
+}
+
+/* line 76, ../sass/custom/_navbar.scss */
+.saiba-mais {
+  font-weight: 600;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 15vh;
+  background: #00acc1;
+  padding: 15px 25px;
+  transition: .5s;
+}
+/* line 86, ../sass/custom/_navbar.scss */
+.saiba-mais:before {
+  position: absolute;
+  content: '';
+  left: calc(50% - 10px);
+  bottom: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #00acc1 transparent transparent transparent;
+  transition: .5s;
+}
+/* line 96, ../sass/custom/_navbar.scss */
+.saiba-mais:hover {
+  transform: translate(-50%, -15px);
+}
+/* line 98, ../sass/custom/_navbar.scss */
+.saiba-mais:hover:before {
+  transform: translateY(10px);
+}
+
+/* line 1, ../sass/custom/_sobre.scss */
+#sobre {
+  position: relative;
+  float: none;
+}
+
+/* line 42, ../sass/custom/_sobre.scss */
+.quem-somos {
+  width: auto;
+  max-width: 60%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 50px;
+}
+/* line 288, ../sass/grid/_grid.scss */
+.quem-somos::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 47, ../sass/custom/_sobre.scss */
+.time-card {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  transition: .5s;
+  padding: 20px 0;
+}
+/* line 288, ../sass/grid/_grid.scss */
+.time-card::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 54, ../sass/grid/_grid.scss */
+.time-card:last-child {
+  margin-right: 0%;
+}
+/* line 51, ../sass/custom/_sobre.scss */
+.time-card:hover {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translate(-10px, -10px);
+}
+/* line 56, ../sass/custom/_sobre.scss */
+.time-card img {
+  width: 25%;
+  height: 25%;
+  display: block;
+  margin: 0 auto 30px;
+  transition: .5s;
+}
+/* line 63, ../sass/custom/_sobre.scss */
+.time-card p {
+  text-align: center;
+  font-size: 16px;
+  font-family: Din-R;
+  line-height: 24px;
+  padding: 30px;
+}
+
+/* line 1, ../sass/custom/_servicos.scss */
+#fazemos {
+  background: url("../images/bg2.jpg");
+  background-size: cover;
+}
+/* line 4, ../sass/custom/_servicos.scss */
+#fazemos h2 {
+  color: #fdfdfd;
+}
+
+/* line 9, ../sass/custom/_servicos.scss */
+.servicos {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  width: 30.1%;
+  margin-top: 50px;
+  transition: linear .2s;
+}
+/* line 288, ../sass/grid/_grid.scss */
+.servicos::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 54, ../sass/grid/_grid.scss */
+.servicos:last-child {
+  margin-right: 0%;
+}
+/* line 14, ../sass/custom/_servicos.scss */
+.servicos:hover {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translate(-10px, -10px);
+}
+
+/* line 24, ../sass/custom/_servicos.scss */
+.servicos-header {
+  padding: 60px 30px;
+}
+/* line 26, ../sass/custom/_servicos.scss */
+.servicos-header img.services-icon {
+  width: 25%;
+  height: 25%;
+  display: block;
+  margin: 0 auto 30px;
+  transition: .5s;
+}
+/* line 33, ../sass/custom/_servicos.scss */
+.servicos-header p {
+  text-align: center;
+  font-size: 16px;
+  font-family: Din-R;
+  line-height: 24px;
+  color: #a7a7a7;
+}
+
+/* line 1, ../sass/custom/_skills.scss */
+.metade {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-top: 50px;
+}
+/* line 288, ../sass/grid/_grid.scss */
+.metade::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 54, ../sass/grid/_grid.scss */
+.metade:last-child {
+  margin-right: 0%;
+}
+/* line 4, ../sass/custom/_skills.scss */
+.metade p {
+  margin: 30px 0 5px 0;
+}
+
+/* line 9, ../sass/custom/_skills.scss */
+.medidor {
+  height: 10px;
+  position: relative;
+  background: #808080;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+/* line 14, ../sass/custom/_skills.scss */
+.medidor span {
+  display: block;
+  height: 100%;
+  background-color: #040404;
+  background-image: linear-gradient(center bottom, #2bc253 37%, #54f054 69%);
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  /* line 26, ../sass/custom/_skills.scss */
+  .metade {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+  }
+  /* line 288, ../sass/grid/_grid.scss */
+  .metade::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  /* line 54, ../sass/grid/_grid.scss */
+  .metade:last-child {
+    margin-right: 0%;
+  }
+}
