@@ -146,24 +146,7 @@ window.onscroll = function() {
 
  })();
 
- // Slider
-
- // (function(){
- // 	var btnLeft = document.getElementById("left"),
- // 		btnRight = document.getElementById("right"),
- // 		item1 = document.getElementById("item-1"),
- // 		item2 = document.getElementById("item-2");
-
- // 	btnRight.addEventListener("click", function(){
- // 		item1.style.right = "100%";
- // 		item2.style.left = "0";
- // 	});
-
- // 	btnLeft.addEventListener("click", function(){
- // 		item1.style.right = "0";
- // 		item2.style.left = "105%";
- // 	});
- // }());
+// Scrolling Effects (Parallax, Animations, FadeIn)
 
  function $$(selector, context) {
     context = context || document;
@@ -172,34 +155,37 @@ window.onscroll = function() {
 } 
 
 window.addEventListener("scroll", function() {
-   var scrolledHeight = window.pageYOffset;
-  $$(".parallax").forEach(function(el,index,array) { 
-    var limit = el.offsetTop + el.offsetHeight;
-  if(scrolledHeight > el.offsetTop && scrolledHeight <= limit) {
-    el.style.backgroundPositionY =  (scrolledHeight - el.offsetTop) / 1.5+ "px";
- 
-    } else {
-     el.style.backgroundPositionY =  "0";
+
+    // Variables
+
+   var scrolledHeight = window.pageYOffset,
+       el = document.getElementById("sabemos"),
+       spans = document.getElementsByClassName("progress"),
+       sections = document.getElementsByClassName("section"),
+       pos = el.getBoundingClientRect();
+
+    // Progress Bar Animate e Fade In
+
+    if (pos.top <=100) {
+        for(var i = 0; i < spans.length; i++) {
+            spans[0].classList.add("html5");
+            spans[1].classList.add("css3");
+            spans[2].classList.add("js");
+            spans[3].classList.add("php");
+            spans[i].classList.add("animate");
+        };
     }
-     });
+
+    // Parallax Animate
+
+    $$(".parallax").forEach(function(el, index, array) { 
+        var limit = el.offsetTop + el.offsetHeight;
+
+      if(scrolledHeight > el.offsetTop && scrolledHeight <= limit) {
+        el.style.backgroundPositionY =  (scrolledHeight - el.offsetTop) + "px";
+        } else {
+         el.style.backgroundPositionY =  "0";
+        }
+    });
 });
 
-var el = document.getElementById("site");
-
-function fadeIn(el) {
-  el.style.opacity = 0;
-
-  
-  var tick = function() {
-    el.style.opacity = +el.style.opacity + 0.01;
-    
-
-    if (+el.style.opacity < 1) {
-      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
-    }
-  };
-
-  tick();
-}
-
-fadeIn(el);
