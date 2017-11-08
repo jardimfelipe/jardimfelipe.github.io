@@ -166,7 +166,7 @@ window.addEventListener("scroll", function() {
 
     // Progress Bar Animate e Fade In
 
-    if (pos.top <=100) {
+    if (pos.top <=500) {
         for(var i = 0; i < spans.length; i++) {
             spans[0].classList.add("html5");
             spans[1].classList.add("css3");
