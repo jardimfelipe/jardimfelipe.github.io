@@ -188,4 +188,3 @@ window.addEventListener("scroll", function() {
         }
     });
 });
-
