@@ -21,6 +21,26 @@
 		overflow: hidden;
 	 }
 }
+.html5 {
+	width: 75%;
+	animation: width 2s ease-in;
+}
+.css3 {
+	width: 65%;
+	animation: width 3s ease-in;
+}
+.js {
+	width: 85%;
+	animation: width 4s ease-in;
+}
+.php {
+	width: 75%;
+	animation: width 5s ease-in;
+}
+
+@-webkit-keyframes width {
+    from { width: 0%; }
+}
 
 @media screen and (max-width: 900px) {
 	.metade {

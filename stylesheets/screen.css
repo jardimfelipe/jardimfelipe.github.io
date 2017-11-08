@@ -437,8 +437,37 @@ header .hero-text a {
   overflow: hidden;
 }
 
+/* line 24, ../sass/custom/_skills.scss */
+.html5 {
+  width: 75%;
+  animation: width 2s ease-in;
+}
+
+/* line 28, ../sass/custom/_skills.scss */
+.css3 {
+  width: 65%;
+  animation: width 3s ease-in;
+}
+
+/* line 32, ../sass/custom/_skills.scss */
+.js {
+  width: 85%;
+  animation: width 4s ease-in;
+}
+
+/* line 36, ../sass/custom/_skills.scss */
+.php {
+  width: 75%;
+  animation: width 5s ease-in;
+}
+
+@-webkit-keyframes width {
+  from {
+    width: 0%;
+  }
+}
 @media screen and (max-width: 900px) {
-  /* line 26, ../sass/custom/_skills.scss */
+  /* line 46, ../sass/custom/_skills.scss */
   .metade {
     float: left;
     clear: none;
