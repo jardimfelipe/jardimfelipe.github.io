@@ -180,11 +180,22 @@ window.addEventListener("scroll", function() {
 
     $$(".parallax").forEach(function(el, index, array) { 
         var limit = el.offsetTop + el.offsetHeight;
-
-      if(scrolledHeight > el.offsetTop && scrolledHeight <= limit) {
         el.style.backgroundPositionY =  (scrolledHeight - el.offsetTop) /1.5 + "px";
-        } else {
-         el.style.backgroundPositionY =  "0";
-        }
     });
-});
+}); //Scroll Function
+
+// (function() {
+// var movementStrength = 25,
+//     height = movementStrength / window.innerHeight,
+//     width = movementStrength / window.innerWidth,
+//     home = document.getElementById("home");
+
+//     home.onmousemove = function(e) {
+//         var pageX = e.pageX - window.innerWidth / 2;
+//         var pageY = e.pageY - window.innerHeight / 2;
+//         var newvalueX = width * pageX * -1 - 25;
+//         var newvalueY = height * pageY * -1 - 50;
+//         home.style.backgroundPositionY = newvalueY+"px";
+//         home.style.backgroundPositionX = newvalueX+"px";
+//     };
+// })();

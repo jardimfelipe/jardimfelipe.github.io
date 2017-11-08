@@ -113,19 +113,19 @@ header {
   height: 100vh;
 }
 
-/* line 18, ../sass/custom/_main.scss */
+/* line 26, ../sass/custom/_main.scss */
 section {
   padding: 100px;
   float: left;
 }
 
-/* line 23, ../sass/custom/_main.scss */
+/* line 31, ../sass/custom/_main.scss */
 section h2 {
   text-align: center;
   font-size: 32px;
   color: #0A1829;
 }
-/* line 27, ../sass/custom/_main.scss */
+/* line 35, ../sass/custom/_main.scss */
 section h2:after {
   content: "";
   background: #588E95;
@@ -137,13 +137,13 @@ section h2:after {
   top: 2px;
 }
 
-/* line 39, ../sass/custom/_main.scss */
+/* line 47, ../sass/custom/_main.scss */
 img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 44, ../sass/custom/_main.scss */
+/* line 52, ../sass/custom/_main.scss */
 #preloader {
   position: fixed;
   top: 0;
@@ -158,7 +158,7 @@ img {
   align-items: center;
   animation: fadeOut 1s ease-in 4s forwards;
 }
-/* line 57, ../sass/custom/_main.scss */
+/* line 65, ../sass/custom/_main.scss */
 #preloader img {
   width: 70px;
   height: 70px;
@@ -169,7 +169,7 @@ img {
     opacity: 0;
   }
 }
-/* line 69, ../sass/custom/_main.scss */
+/* line 77, ../sass/custom/_main.scss */
 .spinner {
   width: 150px;
   height: 150px;
@@ -177,7 +177,7 @@ img {
   margin: 100px auto;
 }
 
-/* line 77, ../sass/custom/_main.scss */
+/* line 85, ../sass/custom/_main.scss */
 .double-bounce1, .double-bounce2 {
   width: 100%;
   height: 100%;
@@ -191,7 +191,7 @@ img {
   animation: sk-bounce 2.0s infinite ease-in-out;
 }
 
-/* line 91, ../sass/custom/_main.scss */
+/* line 99, ../sass/custom/_main.scss */
 .double-bounce2 {
   -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s;
