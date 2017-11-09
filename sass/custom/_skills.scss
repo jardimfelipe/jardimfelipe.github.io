@@ -49,13 +49,3 @@
 	animation-duration: 1.7s; 
 	animation-timing-function: ease-in;
 }
-
-@-webkit-keyframes width {
-    from { width: 0%; }
-}
-
-@media screen and (max-width: 900px) {
-	.metade {
-		@include column(1/1);
-	}
-}

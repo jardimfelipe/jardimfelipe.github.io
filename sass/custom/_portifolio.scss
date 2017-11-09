@@ -1,0 +1,39 @@
+#portifolio {
+    padding: 100px 0 !important;
+}
+
+.back-port {
+    padding: 100px;
+    background: url(../images/bg2.jpg);
+    background-size: cover;
+    & h2 {
+        color: $branco;
+    }
+}
+
+#jobs {
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0;
+    -moz-column-count:    3;
+    -moz-column-gap:      0;
+    column-count:         3;
+    column-gap:           0; 
+    padding: 5px 0 !important;
+    & img {
+        display: block;
+    }
+}
+
+.jobs {
+    @include column(1/1);
+}
+
+.job-imgs {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.animate-img {
+    animation-name: zoomIn;
+}

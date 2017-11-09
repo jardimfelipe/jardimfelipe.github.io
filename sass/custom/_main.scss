@@ -68,12 +68,6 @@ img {
     }
 }
 
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-  }
-}
-
 .spinner {
   width: 150px;
   height: 150px;
@@ -99,19 +93,4 @@ img {
 .double-bounce2 {
   -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s;
-}
-
-@-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
-}
-
-@keyframes sk-bounce {
-  0%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
 }

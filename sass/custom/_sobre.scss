@@ -3,42 +3,6 @@
 	float: none;
 }
 
-// .half {
-// 	@include column(1/2);
-// 	margin-top: 50px;
-// }
-
-// .slider {
-// 	overflow: hidden;
-// 	position: relative;
-// }
-
-// .slider .item-1 {
-// 	position: relative;
-// 	transition: 1s;
-// }
-
-// .slider .item-2 {
-// 	position: absolute;
-// 	left: 105%;
-// 	transition: 1s;
-// 	width: 100%;
-// }
-
-// .arrow-left {
-// 	position: absolute;
-// 	top: 50%;
-// 	transform: translateY(-50%);
-// 	left: 10px;
-// }
-
-// .arrow-right {
-// 	position: absolute;
-// 	top: 50%;
-// 	transform: translateY(-50%);
-// 	right: 10px;
-// }
-
 .quem-somos {
 	@include center(60%);
 	margin-top: 50px;

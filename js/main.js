@@ -1,3 +1,6 @@
+
+
+
 //  Typing Text
 
 var TxtType = function(el, toRotate, period) {
@@ -160,19 +163,28 @@ window.addEventListener("scroll", function() {
 
    var scrolledHeight = window.pageYOffset,
        el = document.getElementById("sabemos"),
+       port = document.getElementById("portifolio"),
        spans = document.getElementsByClassName("progress"),
+       imgs = document.getElementsByClassName("job-imgs"),
        sections = document.getElementsByClassName("section"),
        pos = el.getBoundingClientRect();
+       posport = port.getBoundingClientRect();
 
     // Progress Bar Animate e Fade In
-
-    if (pos.top <=500) {
+    if (pos.top <= 500) {
         for(var i = 0; i < spans.length; i++) {
             spans[0].classList.add("html5");
             spans[1].classList.add("css3");
             spans[2].classList.add("js");
             spans[3].classList.add("php");
             spans[i].classList.add("animate");
+        };
+    }
+
+    if (posport.top <= 500) {
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].style.animationDelay = "0."+i+"s";
+            imgs[i].classList.add("animate-img");
         };
     }
 
