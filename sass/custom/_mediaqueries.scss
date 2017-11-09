@@ -101,6 +101,10 @@
 
 	// Sobre
 
+	.quem-somos {
+		@include center(100%);
+	}
+	
 	.time-card, .servicos, .metade {
 		@include column(1/1);
 	}

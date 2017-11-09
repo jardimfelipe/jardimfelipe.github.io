@@ -799,6 +799,24 @@ div.responsive-nav {
   }
 
   /* line 104, ../sass/custom/_mediaqueries.scss */
+  .quem-somos {
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 288, ../sass/grid/_grid.scss */
+  .quem-somos::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  /* line 108, ../sass/custom/_mediaqueries.scss */
   .time-card, .servicos, .metade {
     float: left;
     clear: none;
@@ -818,7 +836,7 @@ div.responsive-nav {
     margin-right: 0%;
   }
 
-  /* line 108, ../sass/custom/_mediaqueries.scss */
+  /* line 112, ../sass/custom/_mediaqueries.scss */
   #jobs {
     -moz-column-count: 1;
     -webkit-column-count: 1;
@@ -826,7 +844,7 @@ div.responsive-nav {
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 117, ../sass/custom/_mediaqueries.scss */
+  /* line 121, ../sass/custom/_mediaqueries.scss */
   #jobs {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -834,7 +852,7 @@ div.responsive-nav {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 125, ../sass/custom/_mediaqueries.scss */
+  /* line 129, ../sass/custom/_mediaqueries.scss */
   #jobs {
     -moz-column-count: 3;
     -webkit-column-count: 3;
