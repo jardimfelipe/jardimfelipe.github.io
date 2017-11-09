@@ -219,8 +219,10 @@ window.addEventListener("scroll", function() {
     // Parallax Animate
 
     $$(".parallax").forEach(function(el, index, array) { 
-        var limit = el.offsetTop + el.offsetHeight;
-        el.style.backgroundPositionY =  (scrolledHeight - el.offsetTop) /1.5 + "px";
+        if (window.innerWidth >= 768) {
+            var limit = el.offsetTop + el.offsetHeight;
+            el.style.backgroundPositionY =  (scrolledHeight - el.offsetTop) /1.5 + "px";
+        } 
     });
 }); //Scroll Function
 
