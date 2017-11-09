@@ -166,11 +166,17 @@ window.addEventListener("scroll", function() {
    var scrolledHeight = window.pageYOffset,
        el = document.getElementById("sabemos"),
        port = document.getElementById("portifolio"),
+       sobre = document.getElementById("sobre"),
+       fazemos = document.getElementById("fazemos"),
        spans = document.getElementsByClassName("progress"),
+       cards = document.getElementsByClassName("time-card"),
+       servicos = document.getElementsByClassName("servicos"),
        imgs = document.getElementsByClassName("job-imgs"),
        sections = document.getElementsByClassName("section"),
        pos = el.getBoundingClientRect();
        posport = port.getBoundingClientRect();
+       cardpos = sobre.getBoundingClientRect();
+       servpos = fazemos.getBoundingClientRect();
 
     // Progress Bar Animate e Fade In
     if (pos.top <= 500) {
@@ -183,10 +189,30 @@ window.addEventListener("scroll", function() {
         };
     }
 
+    // Jobs Animate
     if (posport.top <= 500) {
         for (var i = 0; i < imgs.length; i++) {
             imgs[i].style.animationDelay = "0."+i+"s";
-            imgs[i].classList.add("animate-img");
+            imgs[i].classList.add("animate-zoom");
+        };
+    }
+
+    // Quem somos Animate 
+
+    if (cardpos.top <= 500) {
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].style.animationDelay = "0"+i+"s";
+            cards[0].classList.add("animate-left");
+            cards[1].classList.add("animate-right");
+        };
+    }
+
+    // Serviços Animate
+
+    if (servpos.top <= 500) {
+        for (var i = 0; i < servicos.length; i++) {
+            servicos[i].style.animationDelay = "0."+i+"s";
+            servicos[i].classList.add("animate-zoom");
         };
     }
 

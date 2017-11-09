@@ -2,6 +2,7 @@ body {
 	background: $branco;
 	font-family: Din-L;
 	float: left;
+  overflow-x: hidden;
 }
 
 a {
@@ -49,48 +50,23 @@ img {
 	max-width: 100%;
 }
 
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #2c3e50;
-    z-index: 3;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeOut 1s ease-in 4s forwards;
-    & img {
-    	width: 70px;
-    	height: 70px;
-    }
+.animate-zoom {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-.spinner {
-  width: 150px;
-  height: 150px;
-
-  position: relative;
-  margin: 100px auto;
+.animate-left {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-.double-bounce1, .double-bounce2 {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #333;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
-}
-
-.double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+.animate-right {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
