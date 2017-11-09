@@ -65,8 +65,10 @@ var TxtType = function(el, toRotate, period) {
 window.onscroll = function() {
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     	document.getElementById("menu").className = "fixed-navbar";
+        document.getElementById("responsive-nav").style.background = "#FFF";
     } else {
     	document.getElementById("menu").className = "";
+        document.getElementById("responsive-nav").style.background = "transparent";
     }
 };
 

@@ -208,24 +208,29 @@ nav .logo-img img {
 }
 
 /* line 13, ../sass/custom/_navbar.scss */
+#burger {
+  visibility: hidden;
+}
+
+/* line 17, ../sass/custom/_navbar.scss */
 nav .itens-menu {
   width: 60%;
   position: relative;
   display: block;
   margin: 0 auto;
 }
-/* line 18, ../sass/custom/_navbar.scss */
+/* line 22, ../sass/custom/_navbar.scss */
 nav .itens-menu ul {
   display: flex;
   justify-content: space-around;
 }
-/* line 22, ../sass/custom/_navbar.scss */
+/* line 26, ../sass/custom/_navbar.scss */
 nav .itens-menu li a {
   font-family: Din-R;
   color: #fdfdfd;
   transition: .5s;
 }
-/* line 26, ../sass/custom/_navbar.scss */
+/* line 30, ../sass/custom/_navbar.scss */
 nav .itens-menu li a:after {
   content: "";
   background: #00acc1;
@@ -236,12 +241,12 @@ nav .itens-menu li a:after {
   top: 2px;
   transition: all 0.3s ease 0s;
 }
-/* line 36, ../sass/custom/_navbar.scss */
+/* line 40, ../sass/custom/_navbar.scss */
 nav .itens-menu li a:hover:after {
   width: 100%;
 }
 
-/* line 42, ../sass/custom/_navbar.scss */
+/* line 46, ../sass/custom/_navbar.scss */
 nav.fixed-navbar {
   position: fixed;
   width: 100%;
@@ -249,16 +254,16 @@ nav.fixed-navbar {
   z-index: 2;
   border-bottom: 2px solid #7FADA9;
 }
-/* line 48, ../sass/custom/_navbar.scss */
+/* line 52, ../sass/custom/_navbar.scss */
 nav.fixed-navbar .logo-img img {
   transform: scale(1.7);
 }
-/* line 51, ../sass/custom/_navbar.scss */
+/* line 55, ../sass/custom/_navbar.scss */
 nav.fixed-navbar .itens-menu ul li a {
   color: #7FADA9;
 }
 
-/* line 56, ../sass/custom/_navbar.scss */
+/* line 60, ../sass/custom/_navbar.scss */
 header .hero-text {
   text-align: center;
   color: #588E95 !important;
@@ -269,16 +274,16 @@ header .hero-text {
   top: 30%;
   left: 50%;
 }
-/* line 65, ../sass/custom/_navbar.scss */
+/* line 69, ../sass/custom/_navbar.scss */
 header .hero-text:first-line {
   font-family: Din-R;
 }
-/* line 68, ../sass/custom/_navbar.scss */
+/* line 72, ../sass/custom/_navbar.scss */
 header .hero-text .wrap {
   color: #588E95;
 }
 
-/* line 73, ../sass/custom/_navbar.scss */
+/* line 77, ../sass/custom/_navbar.scss */
 .saiba-mais {
   font-weight: 600;
   position: absolute;
@@ -290,7 +295,7 @@ header .hero-text .wrap {
   padding: 15px 25px;
   transition: .5s;
 }
-/* line 83, ../sass/custom/_navbar.scss */
+/* line 87, ../sass/custom/_navbar.scss */
 .saiba-mais:before {
   position: absolute;
   content: '';
@@ -301,16 +306,16 @@ header .hero-text .wrap {
   border-color: #00acc1 transparent transparent transparent;
   transition: .5s;
 }
-/* line 93, ../sass/custom/_navbar.scss */
+/* line 97, ../sass/custom/_navbar.scss */
 .saiba-mais:hover {
   transform: translate(-50%, -15px);
 }
-/* line 95, ../sass/custom/_navbar.scss */
+/* line 99, ../sass/custom/_navbar.scss */
 .saiba-mais:hover:before {
   transform: translateY(10px);
 }
 
-/* line 101, ../sass/custom/_navbar.scss */
+/* line 105, ../sass/custom/_navbar.scss */
 div.responsive-nav {
   display: none;
 }
@@ -767,7 +772,7 @@ div.responsive-nav {
 
   /* line 55, ../sass/custom/_mediaqueries.scss */
   input ~ nav {
-    background: white;
+    background: transparent;
     position: fixed;
     top: 0;
     left: 0;
