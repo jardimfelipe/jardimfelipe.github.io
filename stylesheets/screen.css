@@ -97,37 +97,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   background: #fdfdfd;
   font-family: Din-L;
-  float: left;
   overflow-x: hidden;
 }
 
-/* line 8, ../sass/custom/_main.scss */
+/* line 7, ../sass/custom/_main.scss */
 a {
   text-decoration: none;
   color: #fdfdfd;
 }
 
-/* line 13, ../sass/custom/_main.scss */
+/* line 12, ../sass/custom/_main.scss */
 header {
-  background: url("https://www.youtube.com/embed/f6qROlKWkyY?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=f6qROlKWkyY");
-  background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
 }
 
-/* line 28, ../sass/custom/_main.scss */
+/* line 24, ../sass/custom/_main.scss */
 section {
   padding: 100px;
-  float: left;
 }
 
-/* line 33, ../sass/custom/_main.scss */
+/* line 28, ../sass/custom/_main.scss */
 section h2 {
   text-align: center;
   font-size: 32px;
   color: #0A1829;
 }
-/* line 37, ../sass/custom/_main.scss */
+/* line 32, ../sass/custom/_main.scss */
 section h2:after {
   content: "";
   background: #588E95;
@@ -139,13 +134,13 @@ section h2:after {
   top: 2px;
 }
 
-/* line 49, ../sass/custom/_main.scss */
+/* line 44, ../sass/custom/_main.scss */
 img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 54, ../sass/custom/_main.scss */
+/* line 49, ../sass/custom/_main.scss */
 .animate-zoom {
   animation-name: zoomIn;
   animation-duration: 1s;
@@ -153,7 +148,7 @@ img {
   opacity: 0;
 }
 
-/* line 61, ../sass/custom/_main.scss */
+/* line 56, ../sass/custom/_main.scss */
 .animate-left {
   animation-name: slideInLeft;
   animation-duration: 1s;
@@ -161,12 +156,19 @@ img {
   opacity: 0;
 }
 
-/* line 68, ../sass/custom/_main.scss */
+/* line 63, ../sass/custom/_main.scss */
 .animate-right {
   animation-name: slideInRight;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+
+/* line 70, ../sass/custom/_main.scss */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* line 1, ../sass/custom/_navbar.scss */
@@ -176,49 +178,47 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rbga(0, 0, 0, 0.2);
-  background-image: url("images/grade.png");
 }
 
-/* line 11, ../sass/custom/_navbar.scss */
+/* line 9, ../sass/custom/_navbar.scss */
 nav {
   transition: .5s;
   padding: 10px 0 25px 0;
 }
 
-/* line 16, ../sass/custom/_navbar.scss */
+/* line 14, ../sass/custom/_navbar.scss */
 nav .logo-img {
   position: relative;
 }
-/* line 18, ../sass/custom/_navbar.scss */
+/* line 16, ../sass/custom/_navbar.scss */
 nav .logo-img img {
   transition: .5s;
 }
 
-/* line 23, ../sass/custom/_navbar.scss */
+/* line 21, ../sass/custom/_navbar.scss */
 #burger {
   visibility: hidden;
 }
 
-/* line 27, ../sass/custom/_navbar.scss */
+/* line 25, ../sass/custom/_navbar.scss */
 nav .itens-menu {
   width: 60%;
   position: relative;
   display: block;
   margin: 0 auto;
 }
-/* line 32, ../sass/custom/_navbar.scss */
+/* line 30, ../sass/custom/_navbar.scss */
 nav .itens-menu ul {
   display: flex;
   justify-content: space-around;
 }
-/* line 36, ../sass/custom/_navbar.scss */
+/* line 34, ../sass/custom/_navbar.scss */
 nav .itens-menu li a {
   font-family: Din-R;
   color: #fdfdfd;
   transition: .5s;
 }
-/* line 40, ../sass/custom/_navbar.scss */
+/* line 38, ../sass/custom/_navbar.scss */
 nav .itens-menu li a:after {
   content: "";
   background: #00acc1;
@@ -229,12 +229,12 @@ nav .itens-menu li a:after {
   top: 2px;
   transition: all 0.3s ease 0s;
 }
-/* line 50, ../sass/custom/_navbar.scss */
+/* line 48, ../sass/custom/_navbar.scss */
 nav .itens-menu li a:hover:after {
   width: 100%;
 }
 
-/* line 56, ../sass/custom/_navbar.scss */
+/* line 54, ../sass/custom/_navbar.scss */
 nav.fixed-navbar {
   position: fixed;
   width: 100%;
@@ -242,16 +242,16 @@ nav.fixed-navbar {
   z-index: 2;
   border-bottom: 2px solid #7FADA9;
 }
-/* line 62, ../sass/custom/_navbar.scss */
+/* line 60, ../sass/custom/_navbar.scss */
 nav.fixed-navbar .logo-img img {
   transform: scale(1.7);
 }
-/* line 65, ../sass/custom/_navbar.scss */
+/* line 63, ../sass/custom/_navbar.scss */
 nav.fixed-navbar .itens-menu ul li a {
   color: #7FADA9;
 }
 
-/* line 70, ../sass/custom/_navbar.scss */
+/* line 68, ../sass/custom/_navbar.scss */
 header .hero-text {
   text-align: center;
   color: #588E95 !important;
@@ -262,16 +262,16 @@ header .hero-text {
   top: 30%;
   left: 50%;
 }
-/* line 79, ../sass/custom/_navbar.scss */
+/* line 77, ../sass/custom/_navbar.scss */
 header .hero-text:first-line {
   font-family: Din-R;
 }
-/* line 82, ../sass/custom/_navbar.scss */
+/* line 80, ../sass/custom/_navbar.scss */
 header .hero-text .wrap {
   color: #588E95;
 }
 
-/* line 87, ../sass/custom/_navbar.scss */
+/* line 85, ../sass/custom/_navbar.scss */
 .saiba-mais {
   font-weight: 600;
   position: absolute;
@@ -283,7 +283,7 @@ header .hero-text .wrap {
   padding: 15px 25px;
   transition: .5s;
 }
-/* line 97, ../sass/custom/_navbar.scss */
+/* line 95, ../sass/custom/_navbar.scss */
 .saiba-mais:before {
   position: absolute;
   content: '';
@@ -294,16 +294,16 @@ header .hero-text .wrap {
   border-color: #00acc1 transparent transparent transparent;
   transition: .5s;
 }
-/* line 107, ../sass/custom/_navbar.scss */
+/* line 105, ../sass/custom/_navbar.scss */
 .saiba-mais:hover {
   transform: translate(-50%, -15px);
 }
-/* line 109, ../sass/custom/_navbar.scss */
+/* line 107, ../sass/custom/_navbar.scss */
 .saiba-mais:hover:before {
   transform: translateY(10px);
 }
 
-/* line 115, ../sass/custom/_navbar.scss */
+/* line 113, ../sass/custom/_navbar.scss */
 div.responsive-nav {
   display: none;
 }
@@ -313,27 +313,14 @@ div.responsive-nav {
   position: relative;
   float: none;
 }
-
-/* line 6, ../sass/custom/_sobre.scss */
-.quem-somos {
-  width: auto;
-  max-width: 60%;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
+/* line 4, ../sass/custom/_sobre.scss */
+#sobre .flex {
   margin-top: 50px;
-}
-/* line 288, ../sass/grid/_grid.scss */
-.quem-somos::after {
-  content: '';
-  display: table;
-  clear: both;
+  justify-content: center;
+  padding: 0 70px;
 }
 
-/* line 11, ../sass/custom/_sobre.scss */
+/* line 12, ../sass/custom/_sobre.scss */
 .time-card {
   float: left;
   clear: none;
@@ -355,12 +342,12 @@ div.responsive-nav {
 .time-card:last-child {
   margin-right: 0%;
 }
-/* line 16, ../sass/custom/_sobre.scss */
+/* line 17, ../sass/custom/_sobre.scss */
 .time-card:hover {
   background: #fff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-/* line 20, ../sass/custom/_sobre.scss */
+/* line 21, ../sass/custom/_sobre.scss */
 .time-card img {
   width: 25%;
   height: 25%;
@@ -368,7 +355,7 @@ div.responsive-nav {
   margin: 0 auto 30px;
   transition: .5s;
 }
-/* line 27, ../sass/custom/_sobre.scss */
+/* line 28, ../sass/custom/_sobre.scss */
 .time-card p {
   text-align: center;
   font-size: 16px;
@@ -587,21 +574,33 @@ div.responsive-nav {
 }
 /* line 1, ../sass/custom/_portifolio.scss */
 #portifolio {
-  padding: 100px 0 !important;
+  padding: 100px 0 0 0 !important;
 }
 
 /* line 5, ../sass/custom/_portifolio.scss */
-.back-port {
-  padding: 100px;
-  background: url(../images/bg2.jpg);
-  background-size: cover;
+.container-job {
+  position: relative;
+  overflow: hidden;
 }
-/* line 9, ../sass/custom/_portifolio.scss */
-.back-port h2 {
-  color: #fdfdfd;
+/* line 8, ../sass/custom/_portifolio.scss */
+.container-job .conteudo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  transform: translateY(100%);
+}
+/* line 19, ../sass/custom/_portifolio.scss */
+.container-job:hover .conteudo {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* line 14, ../sass/custom/_portifolio.scss */
+/* line 25, ../sass/custom/_portifolio.scss */
 #jobs {
   -webkit-column-count: 3;
   -webkit-column-gap: 0;
@@ -609,15 +608,15 @@ div.responsive-nav {
   -moz-column-gap: 0;
   column-count: 3;
   column-gap: 0;
-  padding: 20px 0 !important;
+  padding: 20px 0 0 0 !important;
 }
-/* line 22, ../sass/custom/_portifolio.scss */
+/* line 33, ../sass/custom/_portifolio.scss */
 #jobs img {
   display: block;
   opacity: 0;
 }
 
-/* line 28, ../sass/custom/_portifolio.scss */
+/* line 39, ../sass/custom/_portifolio.scss */
 .jobs {
   float: left;
   clear: none;
@@ -853,25 +852,93 @@ div.responsive-nav {
     -webkit-column-count: 1;
     column-count: 1;
   }
+
+  /* line 118, ../sass/custom/_mediaqueries.scss */
+  #sobre .flex {
+    padding: 0 !important;
+  }
+
+  /* line 122, ../sass/custom/_mediaqueries.scss */
+  .container {
+    width: auto;
+    max-width: 100%;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 288, ../sass/grid/_grid.scss */
+  .container::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  /* line 128, ../sass/custom/_mediaqueries.scss */
+  .dados {
+    flex-basis: 100%;
+    text-align: center !important;
+  }
 }
 @media only screen and (min-width: 769px) {
-  /* line 121, ../sass/custom/_mediaqueries.scss */
+  /* line 136, ../sass/custom/_mediaqueries.scss */
   #jobs {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
   }
+
+  /* line 142, ../sass/custom/_mediaqueries.scss */
+  .container {
+    width: auto;
+    max-width: 890px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 288, ../sass/grid/_grid.scss */
+  .container::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  /* line 146, ../sass/custom/_mediaqueries.scss */
+  .time-card, .servicos, .metade {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+    width: 46.5%;
+  }
+  /* line 288, ../sass/grid/_grid.scss */
+  .time-card::after, .servicos::after, .metade::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  /* line 54, ../sass/grid/_grid.scss */
+  .time-card:last-child, .servicos:last-child, .metade:last-child {
+    margin-right: 0%;
+  }
 }
 @media only screen and (min-width: 993px) {
-  /* line 129, ../sass/custom/_mediaqueries.scss */
+  /* line 153, ../sass/custom/_mediaqueries.scss */
   #jobs {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
   }
 
-  /* line 135, ../sass/custom/_mediaqueries.scss */
-  .servicos-container {
+  /* line 159, ../sass/custom/_mediaqueries.scss */
+  .container {
     width: auto;
     max-width: 1140px;
     float: none;
@@ -882,9 +949,125 @@ div.responsive-nav {
     padding-right: 0;
   }
   /* line 288, ../sass/grid/_grid.scss */
-  .servicos-container::after {
+  .container::after {
     content: '';
     display: table;
     clear: both;
   }
+
+  /* line 163, ../sass/custom/_mediaqueries.scss */
+  .time-card, .servicos, .metade {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 31.33333%;
+    margin-left: 0%;
+    margin-right: 3%;
+    width: 30.1%;
+  }
+  /* line 288, ../sass/grid/_grid.scss */
+  .time-card::after, .servicos::after, .metade::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  /* line 54, ../sass/grid/_grid.scss */
+  .time-card:last-child, .servicos:last-child, .metade:last-child {
+    margin-right: 0%;
+  }
+}
+/* line 1, ../sass/custom/_contato.scss */
+#contact-form input, textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #588E95;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #f1eded;
+  transition: .5s;
+  margin-bottom: 20px;
+}
+
+/* line 15, ../sass/custom/_contato.scss */
+#contact-form a {
+  display: inline-block;
+  font-size: 24px;
+  font-family: Din-R;
+  color: #fdfdfd;
+  background: #00acc1;
+  padding: 14px 24px;
+  margin-top: 20px;
+  border: 1px solid #f1eded;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+/* line 27, ../sass/custom/_contato.scss */
+#contact-form a:hover {
+  background: #fff;
+  color: #00acc1;
+}
+
+/* line 33, ../sass/custom/_contato.scss */
+#contato .flex {
+  justify-content: center;
+}
+
+/* line 37, ../sass/custom/_contato.scss */
+.dados {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-top: 200px;
+}
+/* line 288, ../sass/grid/_grid.scss */
+.dados::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 54, ../sass/grid/_grid.scss */
+.dados:last-child {
+  margin-right: 0%;
+}
+/* line 40, ../sass/custom/_contato.scss */
+.dados h3 {
+  font-size: 20px;
+}
+/* line 43, ../sass/custom/_contato.scss */
+.dados .contato {
+  font-size: 16px;
+  margin-top: 20px;
+}
+/* line 46, ../sass/custom/_contato.scss */
+.dados .contato i {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* line 53, ../sass/custom/_contato.scss */
+.formulario {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 65.66667%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-top: 50px;
+}
+/* line 288, ../sass/grid/_grid.scss */
+.formulario::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 54, ../sass/grid/_grid.scss */
+.formulario:last-child {
+  margin-right: 0%;
 }

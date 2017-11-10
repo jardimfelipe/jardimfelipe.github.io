@@ -1,12 +1,13 @@
 #sobre {
 	position: relative;
 	float: none;
+	& .flex {
+		margin-top: 50px;
+		justify-content: center;
+		padding: 0 70px;
+	}
 }
 
-.quem-somos {
-	@include center(60%);
-	margin-top: 50px;
-}
 
 .time-card {
 	@include column(1/2);

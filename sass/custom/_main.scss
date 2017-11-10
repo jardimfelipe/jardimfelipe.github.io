@@ -1,8 +1,7 @@
 body {
 	background: $branco;
 	font-family: Din-L;
-	float: left;
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 a {
@@ -11,9 +10,6 @@ a {
 }
 
 header {
-	background: url('https://www.youtube.com/embed/f6qROlKWkyY?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=f6qROlKWkyY');
-	background-size: cover;
-	background-attachment: fixed;
 	height: 100vh;
 }
 
@@ -27,7 +23,6 @@ header {
 
 section {
 	padding: 100px;
-	float: left;
 }
 
 section h2 {
@@ -70,4 +65,10 @@ img {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }

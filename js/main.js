@@ -76,6 +76,8 @@ window.onscroll = function() {
 
 (function() {
 
+    document.querySelector('.formulario').clientHeight
+
      'use strict';
 
 
