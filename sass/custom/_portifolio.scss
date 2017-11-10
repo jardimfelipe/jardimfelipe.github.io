@@ -22,6 +22,15 @@
     }
 }
 
+.back-port {
+    padding: 100px;
+    // background: url(../images/bg2.jpg);
+    // background-size: cover;
+    & h2 {
+        // color: $branco;
+    }
+}
+
 #jobs {
     -webkit-column-count: 3;
     -webkit-column-gap:   0;

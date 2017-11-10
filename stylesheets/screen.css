@@ -618,6 +618,11 @@ div.responsive-nav {
 }
 
 /* line 25, ../sass/custom/_portifolio.scss */
+.back-port {
+  padding: 100px;
+}
+
+/* line 34, ../sass/custom/_portifolio.scss */
 #jobs {
   -webkit-column-count: 3;
   -webkit-column-gap: 0;
@@ -627,13 +632,13 @@ div.responsive-nav {
   column-gap: 0;
   padding: 20px 0 0 0 !important;
 }
-/* line 33, ../sass/custom/_portifolio.scss */
+/* line 42, ../sass/custom/_portifolio.scss */
 #jobs img {
   display: block;
   opacity: 0;
 }
 
-/* line 39, ../sass/custom/_portifolio.scss */
+/* line 48, ../sass/custom/_portifolio.scss */
 .jobs {
   float: left;
   clear: none;
