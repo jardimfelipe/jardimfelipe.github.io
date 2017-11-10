@@ -109,22 +109,20 @@ a {
 /* line 12, ../sass/custom/_main.scss */
 header {
   height: 100vh;
-  background: url("../images/background.jpg");
-  background-size: cover;
 }
 
-/* line 26, ../sass/custom/_main.scss */
+/* line 24, ../sass/custom/_main.scss */
 section {
   padding: 100px;
 }
 
-/* line 30, ../sass/custom/_main.scss */
+/* line 28, ../sass/custom/_main.scss */
 section h2 {
   text-align: center;
   font-size: 32px;
   color: #0A1829;
 }
-/* line 34, ../sass/custom/_main.scss */
+/* line 32, ../sass/custom/_main.scss */
 section h2:after {
   content: "";
   background: #588E95;
@@ -136,13 +134,13 @@ section h2:after {
   top: 2px;
 }
 
-/* line 46, ../sass/custom/_main.scss */
+/* line 44, ../sass/custom/_main.scss */
 img {
   height: auto;
   max-width: 100%;
 }
 
-/* line 51, ../sass/custom/_main.scss */
+/* line 49, ../sass/custom/_main.scss */
 .animate-zoom {
   animation-name: zoomIn;
   animation-duration: 1s;
@@ -150,7 +148,7 @@ img {
   opacity: 0;
 }
 
-/* line 58, ../sass/custom/_main.scss */
+/* line 56, ../sass/custom/_main.scss */
 .animate-left {
   animation-name: slideInLeft;
   animation-duration: 1s;
@@ -158,7 +156,7 @@ img {
   opacity: 0;
 }
 
-/* line 65, ../sass/custom/_main.scss */
+/* line 63, ../sass/custom/_main.scss */
 .animate-right {
   animation-name: slideInRight;
   animation-duration: 1s;
@@ -166,25 +164,25 @@ img {
   opacity: 0;
 }
 
-/* line 72, ../sass/custom/_main.scss */
+/* line 70, ../sass/custom/_main.scss */
 .flex {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-/* line 78, ../sass/custom/_main.scss */
+/* line 76, ../sass/custom/_main.scss */
 ::-webkit-scrollbar-track {
   background-color: #0A1829;
 }
 
-/* line 81, ../sass/custom/_main.scss */
+/* line 79, ../sass/custom/_main.scss */
 ::-webkit-scrollbar {
   width: 6px;
   background: #588E95;
 }
 
-/* line 85, ../sass/custom/_main.scss */
+/* line 83, ../sass/custom/_main.scss */
 ::-webkit-scrollbar-thumb {
   background: #588E95;
   border-radius: 3px;
