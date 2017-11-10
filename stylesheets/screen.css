@@ -173,6 +173,23 @@ img {
   flex-wrap: wrap;
 }
 
+/* line 78, ../sass/custom/_main.scss */
+::-webkit-scrollbar-track {
+  background-color: #0A1829;
+}
+
+/* line 81, ../sass/custom/_main.scss */
+::-webkit-scrollbar {
+  width: 6px;
+  background: #588E95;
+}
+
+/* line 85, ../sass/custom/_main.scss */
+::-webkit-scrollbar-thumb {
+  background: #588E95;
+  border-radius: 3px;
+}
+
 /* line 1, ../sass/custom/_navbar.scss */
 .covervid-wrapper {
   position: absolute;
