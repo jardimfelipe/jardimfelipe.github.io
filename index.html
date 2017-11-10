@@ -19,6 +19,13 @@
 		</div>
 	</div> -->
 	<header>
+		<div class="covervid-wrapper">
+		    <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
+		        <!-- <source src="videos/video.webm" type="video/webm"> -->
+		        <source src="images/typing.mp4" type="video/mp4">
+		    </video>
+		</div>
+
 		<!-- <div id="home"> -->
 			<nav id="menu">
 				<div class="logo-img">
@@ -29,7 +36,7 @@
 						<li><a class="scroll" data-speed="500" href="#sobre">Quem somos?</a></li>
 						<li><a class="scroll" data-speed="500" href="#fazemos">O que fazemos?</a></li>
 						<li><a class="scroll" data-speed="500" href="#sabemos">O que sabemos?</a></li>
-						<li><a class="scroll" data-speed="500" href="#">Portifólio</a></li>
+						<li><a class="scroll" data-speed="500" href="#portifolio">Portifólio</a></li>
 						<li><a class="scroll" data-speed="500" href="#">Contato</a></li>
 					</ul>
 				</div>
@@ -48,7 +55,7 @@
 				    <li><a class="scroll" data-speed="500" href="#sobre">Quem somos?</a></li>
 				    <li><a class="scroll" data-speed="500" href="#fazemos">O que fazemos?</a></li>
 				    <li><a class="scroll" data-speed="500" href="#sabemos">O que sabemos?</a></li>
-				    <li><a class="scroll" data-speed="500" href="#">Portifólio</a></li>
+				    <li><a class="scroll" data-speed="500" href="#portifolio">Portifólio</a></li>
 				    <li><a class="scroll" data-speed="500" href="#">Contato</a></li>
 				  </ul> 
 				</nav>
@@ -79,58 +86,59 @@
 		</div>
 	</section>
 	
-	<section id="fazemos" class="parallax section">
+	<section id="fazemos" class="section">
 		<h2>O que fazemos?</h2>
-		<div class="servicos">
-			<div class="servicos-header">
-				<img src="images/icons/desktop.svg" alt="Web" class="services-icon">
-				<figcaption>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex.</p>
-				</figcaption>
+		<div class="servicos-container">
+			<div class="servicos">
+				<div class="servicos-header">
+					<img src="images/icons/desktop.svg" alt="Web" class="services-icon">
+					<figcaption>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex.</p>
+					</figcaption>
+				</div>
+			</div>	
+			<div class="servicos">
+				<div class="servicos-header">
+					<img src="images/icons/ecommerce.svg" alt="Web" class="services-icon">
+					<figcaption>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex.</p>
+					</figcaption>
+				</div>
 			</div>
-		</div>	
-		<div class="servicos">
-			<div class="servicos-header">
-				<img src="images/icons/ecommerce.svg" alt="Web" class="services-icon">
-				<figcaption>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex.</p>
-				</figcaption>
+			<div class="servicos">
+				<div class="servicos-header">
+					<img src="images/icons/seo.svg" alt="Web" class="services-icon">
+					<figcaption>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex. </p>
+					</figcaption>
+				</div>
 			</div>
-		</div>
 
-		<div class="servicos">
-			<div class="servicos-header">
-				<img src="images/icons/seo.svg" alt="Web" class="services-icon">
-				<figcaption>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex. </p>
-				</figcaption>
+			<div class="servicos">
+				<div class="servicos-header">
+					<img src="images/icons/design.svg" alt="Web" class="services-icon">
+					<figcaption>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex. </p>
+					</figcaption>
+				</div>
 			</div>
-		</div>
 
-		<div class="servicos">
-			<div class="servicos-header">
-				<img src="images/icons/design.svg" alt="Web" class="services-icon">
-				<figcaption>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex. </p>
-				</figcaption>
+			<div class="servicos">
+				<div class="servicos-header">
+					<img src="images/icons/sistema.svg" alt="Web" class="services-icon">
+					<figcaption>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex.</p>
+					</figcaption>
+				</div>
 			</div>
-		</div>
 
-		<div class="servicos">
-			<div class="servicos-header">
-				<img src="images/icons/sistema.svg" alt="Web" class="services-icon">
-				<figcaption>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex.</p>
-				</figcaption>
-			</div>
-		</div>
-
-		<div class="servicos">
-			<div class="servicos-header">
-				<img src="images/icons/suporte.svg" alt="Web" class="services-icon">
-				<figcaption>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex.</p>
-				</figcaption>
+			<div class="servicos">
+				<div class="servicos-header">
+					<img src="images/icons/suporte.svg" alt="Web" class="services-icon">
+					<figcaption>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero lorem, rhoncus eu consequat eget, rutrum nec ex.</p>
+					</figcaption>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -181,5 +189,9 @@
 		</div>
 	</section>
 	<script src="js/main.js"></script>
+	<script src="js/cover.js"></script>
+	<script>
+		coverVid(document.querySelector('.covervid-video'), 1920, 1080);
+	</script>
 </body>
 </html> 

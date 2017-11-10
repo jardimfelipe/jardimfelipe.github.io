@@ -18,17 +18,14 @@
     -moz-column-gap:      0;
     column-count:         3;
     column-gap:           0; 
-    padding: 5px 0 !important;
+    padding: 20px 0 !important;
     & img {
         display: block;
+        opacity: 0;
     }
 }
 
 .jobs {
     @include column(1/1);
-}
-
-.job-imgs {
-    
 }
 
