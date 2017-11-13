@@ -12,24 +12,6 @@
 	margin-bottom: 20px;
 }
 
-#contact-form a {
-	display: inline-block;
-    font-size: 24px;
-    font-family: Din-R;
-    color: $branco;
-    background: $verde-agua;
-    padding: 14px 24px;
-    margin-top: 20px;
-    border: 1px solid $cinza;
-    -webkit-transition: .3s;
-    transition: .3s;
-    cursor: pointer;
-    &:hover {
-    	background: #fff;
-    	color: $verde-agua;
-    }
-}
-
 #contato .flex {
 	justify-content: center;
 }

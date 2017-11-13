@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -188,6 +188,59 @@ img {
   border-radius: 3px;
 }
 
+/* line 88, ../sass/custom/_main.scss */
+.link-btn {
+  display: inline-block;
+  font-size: 24px;
+  font-family: Din-R;
+  color: #fdfdfd;
+  background: #00acc1;
+  padding: 14px 24px;
+  margin-top: 20px;
+  border: 1px solid #f1eded;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+/* line 100, ../sass/custom/_main.scss */
+.link-btn:hover {
+  background: #fff;
+  color: #00acc1;
+}
+
+/* line 106, ../sass/custom/_main.scss */
+.grid-box {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  width: 30.1%;
+  margin-top: 50px;
+  transition: linear .2s;
+  opacity: 0;
+  box-shadow: 0px 0px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  cursor: default;
+  overflow: hidden;
+  position: relative;
+}
+/* line 288, ../sass/grid/_grid.scss */
+.grid-box::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 54, ../sass/grid/_grid.scss */
+.grid-box:last-child {
+  margin-right: 0%;
+}
+/* line 117, ../sass/custom/_main.scss */
+.grid-box:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 /* line 1, ../sass/custom/_navbar.scss */
 .covervid-wrapper {
   position: absolute;
@@ -250,8 +303,12 @@ nav .itens-menu li a:after {
 nav .itens-menu li a:hover:after {
   width: 100%;
 }
+/* line 51, ../sass/custom/_navbar.scss */
+nav .itens-menu li a:active:after {
+  width: 100%;
+}
 
-/* line 54, ../sass/custom/_navbar.scss */
+/* line 57, ../sass/custom/_navbar.scss */
 nav.fixed-navbar {
   position: fixed;
   width: 100%;
@@ -259,16 +316,16 @@ nav.fixed-navbar {
   z-index: 2;
   border-bottom: 2px solid #7FADA9;
 }
-/* line 60, ../sass/custom/_navbar.scss */
+/* line 63, ../sass/custom/_navbar.scss */
 nav.fixed-navbar .logo-img img {
   transform: scale(1.7);
 }
-/* line 63, ../sass/custom/_navbar.scss */
+/* line 66, ../sass/custom/_navbar.scss */
 nav.fixed-navbar .itens-menu ul li a {
   color: #0A1829;
 }
 
-/* line 68, ../sass/custom/_navbar.scss */
+/* line 71, ../sass/custom/_navbar.scss */
 header .hero-text {
   text-align: center;
   color: #588E95 !important;
@@ -279,16 +336,16 @@ header .hero-text {
   top: 30%;
   left: 50%;
 }
-/* line 77, ../sass/custom/_navbar.scss */
+/* line 80, ../sass/custom/_navbar.scss */
 header .hero-text:first-line {
   font-family: Din-R;
 }
-/* line 80, ../sass/custom/_navbar.scss */
+/* line 83, ../sass/custom/_navbar.scss */
 header .hero-text .wrap {
   color: #588E95;
 }
 
-/* line 85, ../sass/custom/_navbar.scss */
+/* line 88, ../sass/custom/_navbar.scss */
 .saiba-mais {
   font-weight: 600;
   position: absolute;
@@ -300,7 +357,7 @@ header .hero-text .wrap {
   padding: 15px 25px;
   transition: .5s;
 }
-/* line 95, ../sass/custom/_navbar.scss */
+/* line 98, ../sass/custom/_navbar.scss */
 .saiba-mais:before {
   position: absolute;
   content: '';
@@ -311,16 +368,16 @@ header .hero-text .wrap {
   border-color: #00acc1 transparent transparent transparent;
   transition: .5s;
 }
-/* line 105, ../sass/custom/_navbar.scss */
+/* line 108, ../sass/custom/_navbar.scss */
 .saiba-mais:hover {
   transform: translate(-50%, -15px);
 }
-/* line 107, ../sass/custom/_navbar.scss */
+/* line 110, ../sass/custom/_navbar.scss */
 .saiba-mais:hover:before {
   transform: translateY(10px);
 }
 
-/* line 113, ../sass/custom/_navbar.scss */
+/* line 116, ../sass/custom/_navbar.scss */
 div.responsive-nav {
   display: none;
 }
@@ -389,41 +446,10 @@ div.responsive-nav {
 }
 
 /* line 6, ../sass/custom/_servicos.scss */
-.servicos {
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 31.33333%;
-  margin-left: 0%;
-  margin-right: 3%;
-  width: 30.1%;
-  margin-top: 50px;
-  transition: linear .2s;
-  opacity: 0;
-  box-shadow: 0px 0px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #fff;
-  cursor: default;
-}
-/* line 288, ../sass/grid/_grid.scss */
-.servicos::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-/* line 54, ../sass/grid/_grid.scss */
-.servicos:last-child {
-  margin-right: 0%;
-}
-/* line 15, ../sass/custom/_servicos.scss */
-.servicos:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* line 23, ../sass/custom/_servicos.scss */
 .servicos-header {
   padding: 60px 30px;
 }
-/* line 25, ../sass/custom/_servicos.scss */
+/* line 8, ../sass/custom/_servicos.scss */
 .servicos-header img.services-icon {
   width: 25%;
   height: 25%;
@@ -431,7 +457,7 @@ div.responsive-nav {
   margin: 0 auto 30px;
   transition: .5s;
 }
-/* line 32, ../sass/custom/_servicos.scss */
+/* line 15, ../sass/custom/_servicos.scss */
 .servicos-header p {
   text-align: center;
   font-size: 16px;
@@ -1016,31 +1042,11 @@ div.responsive-nav {
 }
 
 /* line 15, ../sass/custom/_contato.scss */
-#contact-form a {
-  display: inline-block;
-  font-size: 24px;
-  font-family: Din-R;
-  color: #fdfdfd;
-  background: #00acc1;
-  padding: 14px 24px;
-  margin-top: 20px;
-  border: 1px solid #f1eded;
-  -webkit-transition: .3s;
-  transition: .3s;
-  cursor: pointer;
-}
-/* line 27, ../sass/custom/_contato.scss */
-#contact-form a:hover {
-  background: #fff;
-  color: #00acc1;
-}
-
-/* line 33, ../sass/custom/_contato.scss */
 #contato .flex {
   justify-content: center;
 }
 
-/* line 37, ../sass/custom/_contato.scss */
+/* line 19, ../sass/custom/_contato.scss */
 .dados {
   float: left;
   clear: none;
@@ -1060,22 +1066,22 @@ div.responsive-nav {
 .dados:last-child {
   margin-right: 0%;
 }
-/* line 40, ../sass/custom/_contato.scss */
+/* line 22, ../sass/custom/_contato.scss */
 .dados h3 {
   font-size: 20px;
 }
-/* line 43, ../sass/custom/_contato.scss */
+/* line 25, ../sass/custom/_contato.scss */
 .dados .contato {
   font-size: 16px;
   margin-top: 20px;
 }
-/* line 46, ../sass/custom/_contato.scss */
+/* line 28, ../sass/custom/_contato.scss */
 .dados .contato i {
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-/* line 53, ../sass/custom/_contato.scss */
+/* line 35, ../sass/custom/_contato.scss */
 .formulario {
   float: left;
   clear: none;
@@ -1094,4 +1100,59 @@ div.responsive-nav {
 /* line 54, ../sass/grid/_grid.scss */
 .formulario:last-child {
   margin-right: 0%;
+}
+
+/* line 1, ../sass/custom/_planos.scss */
+#planos {
+  background: #F9F9F9;
+}
+
+/* line 5, ../sass/custom/_planos.scss */
+.plano-ancora {
+  color: #00acc1 !important;
+}
+
+/* line 9, ../sass/custom/_planos.scss */
+.fundo-azul {
+  width: 100%;
+  height: 80px;
+  background: #00acc1;
+  position: absolute;
+  top: -11px;
+  right: 46%;
+  transform: rotate(136deg);
+}
+
+/* line 19, ../sass/custom/_planos.scss */
+.plano-conteudo {
+  padding: 60px 30px;
+  text-align: center;
+}
+/* line 22, ../sass/custom/_planos.scss */
+.plano-conteudo h3 {
+  font-size: 24px;
+  color: #00acc1;
+}
+/* line 26, ../sass/custom/_planos.scss */
+.plano-conteudo p {
+  font-size: 12px;
+  font-family: Din-R;
+  color: #948e8e;
+  padding-top: 7px;
+}
+
+/* line 34, ../sass/custom/_planos.scss */
+.plano-descricao {
+  text-align: center;
+  margin-top: 25px;
+}
+/* line 37, ../sass/custom/_planos.scss */
+.plano-descricao .pricing {
+  color: #7FADA9;
+  font-size: 20px;
+  font-family: Din-B;
+}
+/* line 42, ../sass/custom/_planos.scss */
+.plano-descricao .descricao {
+  margin-top: 25px;
 }

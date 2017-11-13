@@ -163,22 +163,86 @@ window.onscroll = function() {
 
 window.addEventListener("scroll", function() {
 
+    
+
     // Variables
 
    var scrolledHeight = window.pageYOffset,
-       el = document.getElementById("sabemos"),
-       port = document.getElementById("portifolio"),
        sobre = document.getElementById("sobre"),
        fazemos = document.getElementById("fazemos"),
+       el = document.getElementById("sabemos"),
+       port = document.getElementById("portifolio"),
+       planos = document.getElementById("planos"),
+       contato = document.getElementById("contato"),
+       menu = document.getElementById("menu"),
+
+       sobreLink = document.getElementById("sobre-link"),
+       fazemosLink = document.getElementById("fazemos-link"),
+       elLink = document.getElementById("sabemos-link"),
+       portLink = document.getElementById("portifolio-link"),
+       planosLink = document.getElementById("planos-link"),
+       contatoLink = document.getElementById("contato-link"),
+       menuLink = document.getElementById("menu-link"),
+
+       navLinks = document.querySelectorAll('.nav-link'),
        spans = document.getElementsByClassName("progress"),
        cards = document.getElementsByClassName("time-card"),
-       servicos = document.getElementsByClassName("servicos"),
+       gridBox = document.getElementsByClassName("grid-box"),
        imgs = document.getElementsByClassName("job-imgs"),
        sections = document.getElementsByClassName("section"),
-       pos = el.getBoundingClientRect();
-       posport = port.getBoundingClientRect();
        cardpos = sobre.getBoundingClientRect();
        servpos = fazemos.getBoundingClientRect();
+       pos = el.getBoundingClientRect();
+       posport = port.getBoundingClientRect();
+       posplanos = planos.getBoundingClientRect();
+       poscontato = contato.getBoundingClientRect();
+
+    var secoes = [
+        sobre.offsetTop,
+        fazemos.offsetTop,
+        el.offsetTop,
+        port.offsetTop,
+        planos.offsetTop, 
+        contato.offsetTop,
+    ]
+
+    var links = [
+        sobreLink,
+        fazemosLink,
+        elLink,
+        portLink,
+        planosLink,
+        contatoLink,
+        menuLink,
+    ]
+
+        for (i = 0; i <= secoes.length; i++) {
+           if (secoes[i] <= window.pageYOffset + 100) {
+                navLinks[i].style.color = "red";
+            }
+        }
+        
+
+   // Quem somos Animate 
+
+    if (cardpos.top <= 500 && cardpos.top >= 0) {
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].style.animationDelay = "0"+i+"s";
+            cards[0].classList.add("animate-left");
+            cards[1].classList.add("animate-right");
+        };
+        
+    }
+
+    // Serviços Animate
+
+    if (servpos.top <= 500) {
+        for (var i = 0; i < gridBox.length; i++) {
+            gridBox[i].style.animationDelay = "0."+i+"s";
+            gridBox[i].classList.add("animate-zoom");
+        };
+    }
+
 
     // Progress Bar Animate e Fade In
     if (pos.top <= 500) {
@@ -199,25 +263,6 @@ window.addEventListener("scroll", function() {
         };
     }
 
-    // Quem somos Animate 
-
-    if (cardpos.top <= 500) {
-        for (var i = 0; i < cards.length; i++) {
-            cards[i].style.animationDelay = "0"+i+"s";
-            cards[0].classList.add("animate-left");
-            cards[1].classList.add("animate-right");
-        };
-    }
-
-    // Serviços Animate
-
-    if (servpos.top <= 500) {
-        for (var i = 0; i < servicos.length; i++) {
-            servicos[i].style.animationDelay = "0."+i+"s";
-            servicos[i].classList.add("animate-zoom");
-        };
-    }
-
     // Parallax Animate
 
     $$(".parallax").forEach(function(el, index, array) { 
@@ -226,20 +271,8 @@ window.addEventListener("scroll", function() {
             el.style.backgroundPositionY =  (scrolledHeight - el.offsetTop) /1.5 + "px";
         } 
     });
-}); //Scroll Function
+}); 
 
-// (function() {
-// var movementStrength = 25,
-//     height = movementStrength / window.innerHeight,
-//     width = movementStrength / window.innerWidth,
-//     home = document.getElementById("home");
 
-//     home.onmousemove = function(e) {
-//         var pageX = e.pageX - window.innerWidth / 2;
-//         var pageY = e.pageY - window.innerHeight / 2;
-//         var newvalueX = width * pageX * -1 - 25;
-//         var newvalueY = height * pageY * -1 - 50;
-//         home.style.backgroundPositionY = newvalueY+"px";
-//         home.style.backgroundPositionX = newvalueX+"px";
-//     };
-// })();
+
+
