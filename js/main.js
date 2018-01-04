@@ -175,6 +175,7 @@ window.addEventListener("scroll", function() {
        planos = document.getElementById("planos"),
        contato = document.getElementById("contato"),
        menu = document.getElementById("menu"),
+       
 
        sobreLink = document.getElementById("sobre-link"),
        fazemosLink = document.getElementById("fazemos-link"),
@@ -215,12 +216,6 @@ window.addEventListener("scroll", function() {
         contatoLink,
         menuLink,
     ]
-
-        for (i = 0; i <= secoes.length; i++) {
-           if (secoes[i] <= window.pageYOffset + 100) {
-                navLinks[i].style.color = "red";
-            }
-        }
         
 
    // Quem somos Animate 
