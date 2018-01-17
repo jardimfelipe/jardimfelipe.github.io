@@ -259,36 +259,39 @@ nav {
 /* line 14, ../sass/custom/_navbar.scss */
 nav .logo-img {
   position: relative;
+  height: 20px;
 }
-/* line 16, ../sass/custom/_navbar.scss */
+/* line 17, ../sass/custom/_navbar.scss */
 nav .logo-img img {
   transition: .5s;
+  height: 60px;
+  padding-left: 70px;
 }
 
-/* line 21, ../sass/custom/_navbar.scss */
+/* line 24, ../sass/custom/_navbar.scss */
 #burger {
   visibility: hidden;
 }
 
-/* line 25, ../sass/custom/_navbar.scss */
+/* line 28, ../sass/custom/_navbar.scss */
 nav .itens-menu {
   width: 60%;
   position: relative;
   display: block;
   margin: 0 auto;
 }
-/* line 30, ../sass/custom/_navbar.scss */
+/* line 33, ../sass/custom/_navbar.scss */
 nav .itens-menu ul {
   display: flex;
   justify-content: space-around;
 }
-/* line 34, ../sass/custom/_navbar.scss */
+/* line 37, ../sass/custom/_navbar.scss */
 nav .itens-menu li a {
   font-family: Din-R;
   color: #fdfdfd;
   transition: .5s;
 }
-/* line 38, ../sass/custom/_navbar.scss */
+/* line 41, ../sass/custom/_navbar.scss */
 nav .itens-menu li a:after {
   content: "";
   background: #00acc1;
@@ -299,16 +302,16 @@ nav .itens-menu li a:after {
   top: 2px;
   transition: all 0.3s ease 0s;
 }
-/* line 48, ../sass/custom/_navbar.scss */
+/* line 51, ../sass/custom/_navbar.scss */
 nav .itens-menu li a:hover:after {
   width: 100%;
 }
-/* line 51, ../sass/custom/_navbar.scss */
+/* line 54, ../sass/custom/_navbar.scss */
 nav .itens-menu li a:active:after {
   width: 100%;
 }
 
-/* line 57, ../sass/custom/_navbar.scss */
+/* line 60, ../sass/custom/_navbar.scss */
 nav.fixed-navbar {
   position: fixed;
   width: 100%;
@@ -316,16 +319,16 @@ nav.fixed-navbar {
   z-index: 2;
   border-bottom: 2px solid #7FADA9;
 }
-/* line 63, ../sass/custom/_navbar.scss */
-nav.fixed-navbar .logo-img img {
-  transform: scale(1.7);
-}
-/* line 66, ../sass/custom/_navbar.scss */
+/* line 69, ../sass/custom/_navbar.scss */
 nav.fixed-navbar .itens-menu ul li a {
   color: #0A1829;
 }
+/* line 72, ../sass/custom/_navbar.scss */
+nav.fixed-navbar img {
+  fill: white;
+}
 
-/* line 71, ../sass/custom/_navbar.scss */
+/* line 77, ../sass/custom/_navbar.scss */
 header .hero-text {
   text-align: center;
   color: #588E95 !important;
@@ -336,16 +339,16 @@ header .hero-text {
   top: 30%;
   left: 50%;
 }
-/* line 80, ../sass/custom/_navbar.scss */
+/* line 86, ../sass/custom/_navbar.scss */
 header .hero-text:first-line {
   font-family: Din-R;
 }
-/* line 83, ../sass/custom/_navbar.scss */
+/* line 89, ../sass/custom/_navbar.scss */
 header .hero-text .wrap {
   color: #588E95;
 }
 
-/* line 88, ../sass/custom/_navbar.scss */
+/* line 94, ../sass/custom/_navbar.scss */
 .saiba-mais {
   font-weight: 600;
   position: absolute;
@@ -357,7 +360,7 @@ header .hero-text .wrap {
   padding: 15px 25px;
   transition: .5s;
 }
-/* line 98, ../sass/custom/_navbar.scss */
+/* line 104, ../sass/custom/_navbar.scss */
 .saiba-mais:before {
   position: absolute;
   content: '';
@@ -368,16 +371,16 @@ header .hero-text .wrap {
   border-color: #00acc1 transparent transparent transparent;
   transition: .5s;
 }
-/* line 108, ../sass/custom/_navbar.scss */
+/* line 114, ../sass/custom/_navbar.scss */
 .saiba-mais:hover {
   transform: translate(-50%, -15px);
 }
-/* line 110, ../sass/custom/_navbar.scss */
+/* line 116, ../sass/custom/_navbar.scss */
 .saiba-mais:hover:before {
   transform: translateY(10px);
 }
 
-/* line 116, ../sass/custom/_navbar.scss */
+/* line 122, ../sass/custom/_navbar.scss */
 div.responsive-nav {
   display: none;
 }
@@ -1044,14 +1047,15 @@ div.responsive-nav {
   border: 1px solid #f1eded;
   transition: .5s;
   margin-bottom: 20px;
+  font-family: Din-L;
 }
 
-/* line 15, ../sass/custom/_contato.scss */
+/* line 16, ../sass/custom/_contato.scss */
 #contato .flex {
   justify-content: center;
 }
 
-/* line 19, ../sass/custom/_contato.scss */
+/* line 20, ../sass/custom/_contato.scss */
 .dados {
   float: left;
   clear: none;
@@ -1071,22 +1075,22 @@ div.responsive-nav {
 .dados:last-child {
   margin-right: 0%;
 }
-/* line 22, ../sass/custom/_contato.scss */
+/* line 23, ../sass/custom/_contato.scss */
 .dados h3 {
   font-size: 20px;
 }
-/* line 25, ../sass/custom/_contato.scss */
+/* line 26, ../sass/custom/_contato.scss */
 .dados .contato {
   font-size: 16px;
   margin-top: 20px;
 }
-/* line 28, ../sass/custom/_contato.scss */
+/* line 29, ../sass/custom/_contato.scss */
 .dados .contato i {
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-/* line 35, ../sass/custom/_contato.scss */
+/* line 36, ../sass/custom/_contato.scss */
 .formulario {
   float: left;
   clear: none;
@@ -1164,4 +1168,13 @@ div.responsive-nav {
 /* line 45, ../sass/custom/_planos.scss */
 .plano-descricao .descricao {
   margin-top: 25px;
+}
+
+/* line 1, ../sass/custom/_footer.scss */
+footer {
+  display: flex;
+  align-items: center;
+  background: #0A1829;
+  color: #f1eded;
+  padding: 50px 100px;
 }
